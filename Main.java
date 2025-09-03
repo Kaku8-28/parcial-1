@@ -1,8 +1,30 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+
+       Libro libro1 = new Libro("TRES NOVELAS EJEMPLARES", "MIGUEL DE CERVANTES", 5, 0);
         
-        Libro libro1 = new Libro("TRES NOVELAS EJEMPLARES", "MIGUEL DE CERVANTES", 5, 0);
-        Libro libro2 = new Libro("LAS HIJAS DEL CAPITAN", "MARIA DUEÑAS", 3, 1);
+        libro1.setEditorial("Grupo Editorial Norma (Colección Cara y Cruz)");
+        libro1.setAnoPublicacion(2018);
+          
+        Libro libro2 = new Libro();
+
+        System.out.println("Ingrese el título del libro 2:");
+        libro2.setTitulo(sc.nextLine());
+
+        System.out.println("Ingrese el autor del libro 2:");
+        libro2.setAutor(sc.nextLine());
+
+        System.out.println("Ingrese el número de ejemplares:");
+        libro2.setNumEjemplares(sc.nextInt());
+
+        System.out.println("Ingrese la editorial:");
+        libro2.setEditorial(sc.nextLine());
+        
+        System.out.println("Ingrese el año de publicacion:");
+        libro2.setAnoPublicacion(sc.nextInt());
 
        
         System.out.println("\n====Informacion libros====");

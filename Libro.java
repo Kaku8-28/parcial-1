@@ -2,10 +2,12 @@ public class Libro {
     
     private String titulo;
     private String autor;
-    private int numEjemplares;
-    private int numPrestados;
+    private int numEjemplares=0;
+    private int numPrestados=0;
 
-    
+    private String editorial;
+    private int anoPublicacion=0;
+
     public Libro() {
     }
 
@@ -15,6 +17,7 @@ public class Libro {
         this.autor = autor;
         this.numEjemplares = numEjemplares;
         this.numPrestados = numPrestados;
+        
     }
 
     
@@ -49,11 +52,26 @@ public class Libro {
     public void setNumPrestados(int numPrestados) {
         this.numPrestados = numPrestados;
     }
+    public String getEditorial() {
+        return editorial;
+    }
+
+    public void setEditorial(String editorial) {
+        this.editorial = editorial;
+    }
+
+    public int getAnoPublicacion() {
+        return anoPublicacion;
+    }
+
+    public void setAnoPublicacion(int anioPublicacion) {
+        this.anoPublicacion = anioPublicacion;
+    }
 
     
     public boolean prestamo() {
         if (numPrestados < numEjemplares) {
-            numPrestados++;
+            numPrestados=numPrestados+1;
             return true;
         } else {
             return false;
@@ -63,19 +81,23 @@ public class Libro {
     
     public boolean devolucion() {
         if (numPrestados > 0) {
-            numPrestados=numPrestados-2;
+            numPrestados=numPrestados-1;
             return true;
         } else {
             return false;
         }
     }
-
+     public boolean disponible() {
+        return numEjemplares > numPrestados;
+     }
     
     @Override
     public String toString() {
         return "Título: " + titulo + 
                "\nAutor: " + autor +
                "\nEjemplares: " + numEjemplares +
-               "\nPrestados: " + numPrestados;
+               "\nPrestados: " + numPrestados +
+               "\nEditorial: " + editorial +
+                "\nAño de publicación: " + anoPublicacion;
     }
 }
