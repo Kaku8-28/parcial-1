@@ -1,12 +1,14 @@
 # parcial-1
-primer parcial 
-**Kevin David Cuero Anchico
-**grupo: 411
+primer parcial
+---
+Kevin David Cuero Anchico
+grupo: 411
+programacion II
 --- 
 
 ## contenido
 algoritmo solucion parcial 1 programacion 2 
-
+---
 ## intrucciones
 
 ### 1. clona el ropositorio
