@@ -1,7 +1,9 @@
 # parcial-1
-primer parcial 
-**Kevin David Cuero Anchico
-**grupo: 411
+primer parcial
+---
+Kevin David Cuero Anchico
+grupo: 411
+programacion II
 --- 
 
 ## contenido
