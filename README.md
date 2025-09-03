@@ -2,10 +2,10 @@
 primer parcial
 ---
 Kevin David Cuero Anchico
+
 grupo: 411
 programacion II
 --- 
-
 ## contenido
 algoritmo solucion parcial 1 programacion 2 
 ---
